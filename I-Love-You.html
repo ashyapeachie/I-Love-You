@@ -67,11 +67,26 @@ body {
     transition: background-color 0.5s ease;
 }
 
-.message {}
+.message {
+    margin-top: 20px;
+    font-size: 2em;
+    color: white;
+    animation: glow 2s ease-in-out infinite alternate;
+}
 
-@keyframes glow {}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px red;
+    }
+    to {
+        text-shadow: 0 0 20px hotpink;
+    }
+}
 
 
 js file:
+(make seperate file for javascript)
+const heartShape = [
 
+];
  -->
