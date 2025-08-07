@@ -12,4 +12,61 @@ body {
 
 .heart {
     width: 100px;
+    height: 90;
+    position: relative;
+    animation: colorChange 3s infinite;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    animation: inherit;
+}
+
+.heart::before {
+    left: 100px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.message {
+  margin-top: 30px;
+  font-size: 2em;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes colorChange {
+  0% { background: red; }
+  25% { background: hotpink; }
+  50% { background: deeppink; }
+  75% { background: crimson; }
+  100% { background: red; }
+}
+
+@keyframes colorChange {
+  0% { background: red; }
+  25% { background: hotpink; }
+  50% { background: deeppink; }
+  75% { background: crimson; }
+  100% { background: red; }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px red;
+  }
+  to {
+    text-shadow: 0 0 20px pink;
+  }
 }
