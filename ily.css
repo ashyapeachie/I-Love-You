@@ -54,14 +54,6 @@ body {
   100% { background: red; }
 }
 
-@keyframes colorChange {
-  0% { background: red; }
-  25% { background: hotpink; }
-  50% { background: deeppink; }
-  75% { background: crimson; }
-  100% { background: red; }
-}
-
 @keyframes glow {
   from {
     text-shadow: 0 0 10px red;
