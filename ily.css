@@ -1,37 +1,37 @@
 body {
-    background-color: #1e1e1e;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    font-family: 'Segou UI', sans-serif;
-    color: white;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segou UI', sans-serif;
+  color: white;
 }
 
 .heart {
-    width: 100px;
-    height: 90;
-    position: relative;
-    animation: colorChange 3s infinite;
+  width: 100px;
+  height: 90;
+  position: relative;
+  animation: colorChange 3s infinite;
 }
 
 .heart::before,
 .heart::after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 90px;
-    background: red;
-    border-radius: 50px 50px 0 0;
-    animation: inherit;
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 90px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+  animation: inherit;
 }
 
 .heart::before {
-    left: 100px;
-    transform: rotate(-45deg);
-    transform-origin: 0 100%;
+  left: 100px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
 }
 
 .heart::after {
