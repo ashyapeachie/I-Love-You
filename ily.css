@@ -12,7 +12,7 @@ body {
 
 .heart {
   width: 100px;
-  height: 90;
+  height: 90px;
   position: relative;
   animation: colorChange 3s infinite;
 }
