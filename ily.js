@@ -13,7 +13,8 @@ const grid = document.getElementById('heartGrid');
 
 /* generating all the pixels (42) */
 for (let row = 0; row < 6; row++) {
-    for () {
+    for (let col = 0; col < 7; col++) {
+        const pixel = document.createElement(div);
         
     }
 }
