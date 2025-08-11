@@ -1,4 +1,9 @@
-/*  */
+/* 
+* author: Ashya 
+* filename: ily.js
+* description: this file defines the heart shape using coordinates, creates a grid of divs,
+* colors only the heart shaped blocks, and changes their color every second
+*/
 
 const heartShape = [
     [1, 0], [2, 0], [4, 0], [5, 0],
@@ -10,11 +15,34 @@ const heartShape = [
 ];
 
 const grid = document.getElementById('heartGrid');
+// selecting the heart grid container from HTML
 
 /* generating all the pixels (42) */
 for (let row = 0; row < 6; row++) {
     for (let col = 0; col < 7; col++) {
-        const pixel = document.createElement(div);
-        
+        const pixel = document.createElement('div');
+        // creating a new div element to rep a pixel
+        pixel.classList.add('pixel');
+        // adding the css class for styling 
+        pixel.dataset.row = row;
+        pixel.dataset.col = col;
+        //
+        grid.appendChild(pixel);
+        //
     }
 }
+
+function getPixel(row, col) {
+    return document.querySelector(`.pixel[data-row='${row}'][data-col='${col}']`);
+}
+// helper / utility function to get a pixel by coordinates
+
+function getRandomHeartColorl() {
+    const colors = ['#ff4d4d', '#ff1a75', '#ff3399', '#ff6666', '#ff80bf', '#ff99cc'];
+    return colors[Math.floor(Math.random() * colors.length)];
+}
+// function returns random heart based color from a predefined palette 
+
+/* animating the color change in heart */
+setInterval(colorHeart, 800);
+colorHeart();
