@@ -1,64 +1,40 @@
 body {
-  background-color: #F8C8DC;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-  font-family: 'Segou UI', sans-serif;
-  color: white;
+    background-color: #FFC0CB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segou UI', sans-serif;
 }
 
-.heart {
-  width: 100px;
-  height: 90px;
-  position: relative;
-  animation: colorChange 3s infinite;
+.heart-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 30px);
+    grid-template-rows: repeat(6, 30px);
+    gap: 2px;
 }
 
-.heart::before,
-.heart::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 90px;
-  background: red;
-  border-radius: 50px 50px 0 0;
-  animation: inherit;
-}
-
-.heart::before {
-  left: 100px;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-}
-
-.heart::after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
+.pixel {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
 }
 
 .message {
-  margin-top: 30px;
-  font-size: 2em;
-  animation: glow 2s ease-in-out infinite alternate;
-}
-
-@keyframes colorChange {
-  0% { background: red; }
-  25% { background: hotpink; }
-  50% { background: deeppink; }
-  75% { background: crimson; }
-  100% { background: red; }
+    margin-top: 20px;
+    font-size: 2em;
+    color: white;
+    animation: glow 2s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-  from {
-    text-shadow: 0 0 10px red;
-  }
-  to {
-    text-shadow: 0 0 20px pink;
-  }
+    from {
+        text-shadow: 0 0 10px red;
+    }
+    to {
+        text-shadow: 0 0 20px hotpink;
+    }
 }

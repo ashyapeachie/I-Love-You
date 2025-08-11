@@ -1,24 +1,26 @@
 <!-- coming back to make full header I normally do -->
- <!--fixing the VSCode issue of default browser mot being found-->
+<!--fixing the VSCode issue of default browser mot being found-->
 
 <!DOCTYPE html>
 <!--- declaration that tells the browser to use latest version of HTML(HTML5) -->
 <html lang = "en">
     <head>
-        <meta charset = "UTF-8">
+        <meta charset = "UTF-8" />
         <!-- sets the char encoding to UTF=-8 to support all chars -->
-        <meta name = "viewport" content = "width = device - width, initial-scale = 1">
+        <meta name = "viewport" content = "width = device - width, initial-scale = 1.0"/>
         <!-- ensures the page is responsive and scales correctly on all devices -->
-        <title> Geometric Heart </title>
+        <title> Pixel Heart </title>
         <!-- title displayes in the broswer tab -->
-        <link rel = "stylesheet" href = "ily.css">
+        <link rel = "stylesheet" href = "ily.css"/>
         <!-- link to the external CSS file for styling -->
     </head>
     <body>
-        <div class = "heart" ></div>
+        <div class = "heart-grid" id="heartGrid" ></div>
         <!-- heart shape container will be styles w CSS to look like a heart -->
         <p class = "message" >I love you</p>
         <!-- message below the heart -->
+        <script src = "script.ily"></script>
+        
     </body>
 </html>
 
@@ -41,61 +43,3 @@
     <script src="script.js"></script>
     </body>
     </html>
-
-alt css if js file is added:
-body {
-    background-color: #111;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    font-family: 'Segou UI', sans-serif;
-}
-
-.heart-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 30px);
-    grid-template-rows: repeat(6, 30px);
-    gap: 2px;
-}
-
-.pixel {
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    transition: background-color 0.5s ease;
-}
-
-.message {
-    margin-top: 20px;
-    font-size: 2em;
-    color: white;
-    animation: glow 2s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 10px red;
-    }
-    to {
-        text-shadow: 0 0 20px hotpink;
-    }
-}
-
-
-js file:
-(make seperate file for javascript)
-const heartShape = [
-    [], [], [], [],
-    [], [], [], 
-    [], [],
-    [], [],
-    [], [],
-    [],
-];
-
-const grid = document.getElementById('heartGrid');
-
- -->
