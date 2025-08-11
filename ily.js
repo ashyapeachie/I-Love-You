@@ -11,6 +11,9 @@ const heartShape = [
 
 const grid = document.getElementById('heartGrid');
 
-// for () {
-
-// }
+/* generating all the pixels (42) */
+for (let row = 0; row < 6; row++) {
+    for () {
+        
+    }
+}
