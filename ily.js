@@ -43,6 +43,17 @@ function getRandomHeartColorl() {
 }
 // function returns random heart based color from a predefined palette 
 
+function colorHeart() {
+    heartShape.forEach(([col, row]) => {
+        const pixel = getPixel(row, col);
+        // getting the corresponding pixel
+        if (pixel) {
+            pixel.style .backgroundColor = getRandomHeartColor();
+        }
+    });
+}
+// function applies new random color to each pixel that's part of the heart
+
 /* animating the color change in heart */
 setInterval(colorHeart, 800);
 colorHeart();
