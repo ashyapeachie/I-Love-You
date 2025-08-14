@@ -13,6 +13,7 @@ const heartShape = [
     [2, 4], [4, 4],
     [3, 5],
 ];
+// this array defines the pixel coordinates that form the heart
 
 const grid = document.getElementById('heartGrid');
 // selecting the heart grid container from HTML
