@@ -13,7 +13,7 @@ const heartShape = [
     [2, 4], [4, 4],
     [3, 5],
 ];
-// this array defines the pixel coordinates that form the heart
+// this array defines the pixel coordinates (column, row) that form the heart
 
 const grid = document.getElementById('heartGrid');
 // selecting the heart grid container from HTML
@@ -27,9 +27,9 @@ for (let row = 0; row < 6; row++) {
         // adding the css class for styling 
         pixel.dataset.row = row;
         pixel.dataset.col = col;
-        //
+        // stores the row and column as data attributes for easy access
         grid.appendChild(pixel);
-        //
+        // adds the pixel to the grid container
     }
 }
 
@@ -38,7 +38,7 @@ function getPixel(row, col) {
 }
 // helper / utility function to get a pixel by coordinates
 
-function getRandomHeartColorl() {
+function getRandomHeartColor() {
     const colors = ['#ff4d4d', '#ff1a75', '#ff3399', '#ff6666', '#ff80bf', '#ff99cc'];
     return colors[Math.floor(Math.random() * colors.length)];
 }
