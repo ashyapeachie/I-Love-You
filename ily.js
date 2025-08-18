@@ -58,3 +58,5 @@ function colorHeart() {
 /* animating the color change in heart */
 setInterval(colorHeart, 800);
 colorHeart();
+
+// saving url to share https://ashyapeachie.github.io/I-Love-You/
