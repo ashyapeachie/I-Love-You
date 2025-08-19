@@ -60,3 +60,4 @@ setInterval(colorHeart, 800);
 colorHeart();
 
 // saving url to share https://ashyapeachie.github.io/I-Love-You/
+// url from Github isn't working, find issue later!
