@@ -38,3 +38,13 @@ body {
         text-shadow: 0 0 20px hotpink;
     }
 }
+
+.heart-grid {
+    transform: rotateX(20deg) rotateY(10deg);
+    transform-style: preserve-3d;
+    perspective: 800px;
+}
+.pixel {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-radius: 4px;
+}
