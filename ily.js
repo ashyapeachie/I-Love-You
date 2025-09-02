@@ -56,8 +56,8 @@ function colorHeart() {
 // function applies new random color to each pixel that's part of the heart
 
 /* animating the color change in heart */
-setInterval(colorHeart, 800);
+setInterval(colorHeart, 600);
 colorHeart();
 
-// saving url to share https://ashyapeachie.github.io/I-Love-You/
+// not sure why the squares in the grid are slanted from left to right
 // url from Github isn't working, find issue later!
