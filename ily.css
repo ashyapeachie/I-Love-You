@@ -6,7 +6,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Segou UI', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .heart-grid {
@@ -24,7 +24,7 @@ body {
 }
 
 .message {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 2em;
     color: white;
     animation: glow 2s ease-in-out infinite alternate;
