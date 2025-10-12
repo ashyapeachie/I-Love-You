@@ -9,7 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#heart-grid {
+.heart-grid {
     display: grid;
     grid-template-columns: repeat(7, 30px);
     grid-template-rows: repeat(6, 30px);
