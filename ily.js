@@ -14,6 +14,7 @@ const heartShape = [
     [3, 5],
 ];
 // this array defines the pixel coordinates (column, row) that form the heart
+// manually specifiying which grid blocks from the shape of a heart
 
 const grid = document.getElementById('heartGrid');
 // selecting the heart grid container from HTML
@@ -32,9 +33,11 @@ for (let row = 0; row < 6; row++) {
         // adds the pixel to the grid container
     }
 }
+// this generates 42 divs (6 rows x 7 cols) and adds them to a container
+// each div.pixel has data-row and data-col attributes to help select them later
 
 function getPixel(row, col) {
-    return document.querySelector(`.pixel[data-row='${row}'][data-col='${col}']`);
+    return document.querySelector (`.pixel[data-row='${row}'][data-col='${col}']`);
 }
 // helper / utility function to get a pixel by coordinates
 
