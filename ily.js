@@ -36,16 +36,15 @@ for (let row = 0; row < 6; row++) {
 // this generates 42 divs (6 rows x 7 cols) and adds them to a container
 // each div.pixel has data-row and data-col attributes to help select them later
 
+/* helper functions */
 function getPixel(row, col) {
     return document.querySelector (`.pixel[data-row='${row}'][data-col='${col}']`);
 }
-// helper / utility function to get a pixel by coordinates
 
 function getRandomHeartColor() {
     const colors = ['#ff4d4d', '#ff1a75', '#ff3399', '#ff6666', '#ff80bf', '#ff99cc'];
     return colors[Math.floor(Math.random() * colors.length)];
 }
-// function returns random heart based color from a predefined palette 
 
 function colorHeart() {
     heartShape.forEach(([col, row]) => {
@@ -57,6 +56,7 @@ function colorHeart() {
     });
 }
 // function applies new random color to each pixel that's part of the heart
+// 
 
 /* animating the color change in heart */
 setInterval(colorHeart, 600);
