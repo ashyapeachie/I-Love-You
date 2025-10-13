@@ -56,7 +56,9 @@ function colorHeart() {
     });
 }
 // function applies new random color to each pixel that's part of the heart
-// 
+// getPixel fetches a specific pixel by its row / col using attribute selector
+// getRandomHeartColor returns a random red / pink tone
+// colorHeart loops through the heartShape pixels and applies a random color
 
 /* animating the color change in heart */
 setInterval(colorHeart, 600);
