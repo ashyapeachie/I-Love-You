@@ -16,6 +16,28 @@ nav {
     /* doesn't seem to be working, need to come back to later */
 }
 
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
 .heart-grid {
     display: grid;
     grid-template-columns: repeat(7, 30px);
