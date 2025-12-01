@@ -13,6 +13,7 @@ body {
 nav {
     background-color: #FFF1E6;
     padding: 10px 0;
+    /* doesn't seem to be working, need to come back to later */
 }
 
 .heart-grid {
