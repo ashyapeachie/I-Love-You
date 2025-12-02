@@ -10,6 +10,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body, h1, p, nav a {
+    font-family: 'Press Start 2P', monospace;
+    letter-spacing: 1px;
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -78,6 +83,15 @@ body {
 .heart-grid {
     animation: heartbeat 1.2s infinite ease-in-out;
 }
+
+@keyframes heartbeat {
+    0%   { transform: scale(1) rotateX(20deg) rotateY(10deg); }
+    25%  { transform: scale(1.08) rotateX(20deg) rotateY(10deg); }
+    50%  { transform: scale(1) rotateX(20deg) rotateY(10deg); }
+    75%  { transform: scale(1.08) rotateX(20deg) rotateY(10deg); }
+    100% { transform: scale(1) rotateX(20deg) rotateY(10deg); }
+}
+
 .pixel {
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     border-radius: 4px;
