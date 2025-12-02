@@ -10,42 +10,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body, h1, p, nav a {
-    font-family: 'Press Start 2P', monospace;
-    letter-spacing: 1px;
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #ffe4ec;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    padding: 12px 0;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #d9006f;
-    font-size: 1.1em;
-    font-weight: bold;
-    transition: 0.2s ease;
-}
-
-.navbar a:hover {
-    color: #ff008c;
-    text-shadow: 0px 0px 8px hotpink;
-    transform: scale(1.1);
-}
 
 
 .heart-grid {
