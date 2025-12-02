@@ -45,7 +45,6 @@ body {
     background-color: transparent;
     transition: background-color 0.5s ease;
     border-radius: 3px; 
-    /* making pixels rounded */
 }
 
 .message {
@@ -65,5 +64,16 @@ body {
     }
 }
 
+.intro h1 {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    color: #7a2f2f;
+}
 
+.game-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
 /* game menu */

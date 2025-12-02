@@ -23,14 +23,10 @@ const grid = document.getElementById('heartGrid');
 for (let row = 0; row < 6; row++) {
     for (let col = 0; col < 7; col++) {
         const pixel = document.createElement('div');
-        // creating a new div element to rep a pixel
         pixel.classList.add('pixel');
-        // adding the css class for styling 
         pixel.dataset.row = row;
         pixel.dataset.col = col;
-        // stores the row and column as data attributes for easy access
         grid.appendChild(pixel);
-        // adds the pixel to the grid container
     }
 }
 // this generates 42 divs (6 rows x 7 cols) and adds them to a container
@@ -38,7 +34,7 @@ for (let row = 0; row < 6; row++) {
 
 /* helper functions */
 function getPixel(row, col) {
-    return document.querySelector (`.pixel[data-row='${row}'][data-col='${col}']`);
+    return document.querySelector(`.pixel[data-row='${row}'][data-col='${col}']`);
 }
 
 function getRandomHeartColor() {
@@ -49,10 +45,7 @@ function getRandomHeartColor() {
 function colorHeart() {
     heartShape.forEach(([col, row]) => {
         const pixel = getPixel(row, col);
-        // getting the corresponding pixel
-        if (pixel) {
-            pixel.style .backgroundColor = getRandomHeartColor();
-        }
+        if (pixel) pixel.style.backgroundColor = getRandomHeartColor();
     });
 }
 // function applies new random color to each pixel that's part of the heart
@@ -63,6 +56,3 @@ function colorHeart() {
 /* animating the color change in heart */
 setInterval(colorHeart, 600);
 colorHeart();
-
-// not sure why the squares in the grid are slanted from left to right
-// url from Github isn't working, find issue later!
