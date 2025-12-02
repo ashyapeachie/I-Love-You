@@ -21,6 +21,24 @@ body {
     animation: heartbeat 3.0s infinite ease-in-out;
 }
 
+@keyframes heartbeat {
+    0% { 
+        transform: scale(1) rotateX(20deg) rotateY(10deg); 
+    }
+    25% { 
+        transform: scale(1.08) rotateX(20deg) rotateY(10deg); 
+    }
+    50% { 
+        transform: scale(1) rotateX(20deg) rotateY(10deg); 
+    }
+    75% { 
+        transform: scale(1.08) rotateX(20deg) rotateY(10deg); 
+    }
+    100% { 
+        transform: scale(1) rotateX(20deg) rotateY(10deg); 
+    }
+}
+
 .pixel {
     width: 30px;
     height: 30px;
@@ -34,6 +52,7 @@ body {
     margin-top: 10px;
     font-size: 2em;
     color: white;
+    text-align: center;
     animation: glow 2s ease-in-out infinite alternate;
 }
 
@@ -46,19 +65,5 @@ body {
     }
 }
 
-.heart-grid {
-    animation: heartbeat 1.2s infinite ease-in-out;
-}
 
-@keyframes heartbeat {
-    0%   { transform: scale(1) rotateX(20deg) rotateY(10deg); }
-    25%  { transform: scale(1.08) rotateX(20deg) rotateY(10deg); }
-    50%  { transform: scale(1) rotateX(20deg) rotateY(10deg); }
-    75%  { transform: scale(1.08) rotateX(20deg) rotateY(10deg); }
-    100% { transform: scale(1) rotateX(20deg) rotateY(10deg); }
-}
-
-.pixel {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    border-radius: 4px;
-}
+/* game menu */
