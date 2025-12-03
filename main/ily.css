@@ -14,7 +14,7 @@ body {
     display: grid;
     grid-template-columns: repeat(7, 30px);
     grid-template-rows: repeat(6, 30px);
-    gap: 2px;
+    gap: 3px;
     transform: rotateX(20deg) rotateY(10deg);
     transform-style: preserve-3d;
     perspective: 800px;
