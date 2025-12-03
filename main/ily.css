@@ -1,0 +1,79 @@
+body {
+    padding-top: 60px;
+    background-color: #FFC0CB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heart-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 30px);
+    grid-template-rows: repeat(6, 30px);
+    gap: 2px;
+    transform: rotateX(20deg) rotateY(10deg);
+    transform-style: preserve-3d;
+    perspective: 800px;
+    animation: heartbeat 3.0s infinite ease-in-out;
+}
+
+@keyframes heartbeat {
+    0% { 
+        transform: scale(1) rotateX(20deg) rotateY(10deg); 
+    }
+    25% { 
+        transform: scale(1.08) rotateX(20deg) rotateY(10deg); 
+    }
+    50% { 
+        transform: scale(1) rotateX(20deg) rotateY(10deg); 
+    }
+    75% { 
+        transform: scale(1.08) rotateX(20deg) rotateY(10deg); 
+    }
+    100% { 
+        transform: scale(1) rotateX(20deg) rotateY(10deg); 
+    }
+}
+
+.pixel {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    border-radius: 3px; 
+}
+
+.message {
+    margin-top: 10px;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px red;
+    }
+    to {
+        text-shadow: 0 0 20px hotpink;
+    }
+}
+
+.intro h1 {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    color: #7a2f2f;
+}
+
+.game-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+/* game menu */
