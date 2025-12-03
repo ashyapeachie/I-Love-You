@@ -1,5 +1,5 @@
 /* 
-* author: Ashya 
+* author: Aham
 * filename: ily.js
 * description: this file defines the heart shape using coordinates, creates a grid of divs,
 * colors only the heart shaped blocks, and changes their color every second
